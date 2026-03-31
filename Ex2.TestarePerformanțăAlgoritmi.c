@@ -5,7 +5,6 @@
 
 #define N 20000 // Marit la 20k pentru a vedea diferente la Quick/Merge
 
-// --- Algoritmi de Sortare ---
 
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++)
@@ -109,7 +108,7 @@ int main() {
         printf("%-15s: %f secunde\n", names[alg], times[alg]);
     }
 
-    // Identificare castigator
+
     int best = 0;
     for (int i = 1; i < 5; i++) {
         if (times[i] < times[best]) best = i;
